@@ -1,0 +1,16 @@
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\Clean_Architecture.Share.deps.json
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\Clean_Architecture.Share.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\Clean_Architecture.Share.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\Clean_Architecture.Domain.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\Clean_Architecture.Domain.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.csproj.AssemblyReference.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.GeneratedMSBuildEditorConfig.editorconfig
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.AssemblyInfoInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.AssemblyInfo.cs
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.csproj.CoreCompileInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.sourcelink.json
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Ar.9538A54B.Up2Date
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\refint\Clean_Architecture.Share.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\Clean_Architecture.Share.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\ref\Clean_Architecture.Share.dll

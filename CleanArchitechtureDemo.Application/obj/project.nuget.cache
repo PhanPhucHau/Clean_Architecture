@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9cq/JlX+ERg=",
+  "dgSpecHash": "/DJCPMta/hc=",
   "success": true,
-  "projectFilePath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj",
+  "projectFilePath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",

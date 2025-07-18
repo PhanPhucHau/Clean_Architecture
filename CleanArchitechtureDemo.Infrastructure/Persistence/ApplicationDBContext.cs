@@ -1,12 +1,11 @@
 ﻿using Clean_Architecture.Applicaiton.Common.Interfaces;
+using Clean_Architecture.Domain.Entities;
 using Clean_Architecture.Infrastructure.Persistence.EntityConfigurations.Models;
-using CleanArchitechtureDemo.Domain.Entities;
-using MediatR;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace CleanArchitechtureDemo.Infrastructure.Persistence;
+namespace Clean_Architecture.Infrastructure.Persistence;
 
 public class ApplicationDBContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>, IApplicationDbContext
 {

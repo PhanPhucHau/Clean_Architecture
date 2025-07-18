@@ -1,10 +1,10 @@
 ﻿using Clean_Architecture.Applicaiton.Common.Interfaces;
-using CleanArchitechtureDemo.Infrastructure.Persistence;
+using Clean_Architecture.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchitechtureDemo.Infrastructure.DependencyInjection;
+namespace Clean_Architecture.Infrastructure.DependencyInjection;
 
 public static class DependencyInjection
 {

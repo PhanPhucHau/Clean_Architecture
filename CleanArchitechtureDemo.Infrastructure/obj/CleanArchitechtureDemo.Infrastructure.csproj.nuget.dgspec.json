@@ -4,12 +4,12 @@
     "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Infrastructure\\CleanArchitechtureDemo.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj": {
+    "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj",
-        "projectName": "CleanArchitechtureDemo.Application",
-        "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj",
+        "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj",
+        "projectName": "Clean_Architecture.Application",
+        "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj": {
-                "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj"
+              "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj": {
+                "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj"
               },
               "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Share\\CleanArchitechtureDemo.Share.csproj": {
                 "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Share\\CleanArchitechtureDemo.Share.csproj"
@@ -77,12 +77,12 @@
         }
       }
     },
-    "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj": {
+    "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj",
-        "projectName": "CleanArchitechtureDemo.Domain",
-        "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj",
+        "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj",
+        "projectName": "Clean_Architecture.Domain",
+        "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -178,11 +178,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj": {
-                "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj"
+              "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj": {
+                "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj"
               },
-              "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj": {
-                "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj"
+              "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj": {
+                "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj"
               }
             }
           }

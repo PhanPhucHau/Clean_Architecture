@@ -17,9 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchitechtureDemo.Application\CleanArchitechtureDemo.Application.csproj" />
-    <ProjectReference Include="..\CleanArchitechtureDemo.Infrastructure\CleanArchitechtureDemo.Infrastructure.csproj" />
-    <ProjectReference Include="..\CleanArchitechtureDemo.Share\CleanArchitechtureDemo.Share.csproj" />
+    <ProjectReference Include="..\CleanArchitechtureDemo.Application\Clean_Architecture.Application.csproj" />
+    <ProjectReference Include="..\CleanArchitechtureDemo.Infrastructure\Clean_Architecture.Infrastructure.csproj" />
+    <ProjectReference Include="..\CleanArchitechtureDemo.Share\Clean_Architecture.Share.csproj" />
   </ItemGroup>
 
 </Project>

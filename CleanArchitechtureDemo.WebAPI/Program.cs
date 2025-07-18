@@ -1,4 +1,4 @@
-using CleanArchitechtureDemo.Infrastructure.DependencyInjection;
+using Clean_Architecture.Infrastructure.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -51,13 +51,13 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// register MediatR
+//register MediatR
 builder.Services.AddMediatR(cfg =>
 {
 
 });
 
-// register Infrastructure
+//register Infrastructure
 builder.Services.AddInfrastructure(builder.Configuration);
 
 app.UseHttpsRedirection();

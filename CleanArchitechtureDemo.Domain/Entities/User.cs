@@ -1,7 +1,8 @@
 ﻿using Clean_Architecture.Domain.Common;
-using CleanArchitechtureDemo.Domain.Enums;
+using Clean_Architecture.Domain.Enums;
+using Clean_Architecture.Domain.Events.UserEvent;
 
-namespace CleanArchitechtureDemo.Domain.Entities;
+namespace Clean_Architecture.Domain.Entities;
 
 public class User : BaseAuditableEntity
 {
@@ -15,4 +16,26 @@ public class User : BaseAuditableEntity
     public virtual ICollection<Device> Devices { get; set; } = new HashSet<Device>();
     public virtual ICollection<Notify> Notifies { get; set; } = new HashSet<Notify>();
 
+
+    private User() { }
+
+    public static User Create(string name, string? email, string phoneNumber, string address, DateTime? date, Gender gender, NotificationUser notificationUser)
+    {
+        var user = new User
+        {
+            Name = name,
+            Email = email,
+            PhoneNumber = phoneNumber,
+            Address = address,
+            DateOfBirth = date,
+            Gender = gender,
+            NotificationUser = notificationUser
+        };
+
+        user.AddDomainEvent(new CreateUserEvent(user));
+
+        return user;
+    }
+
 }
+

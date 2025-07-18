@@ -1,7 +1,7 @@
 ﻿using Clean_Architecture.Domain.Common;
-using CleanArchitechtureDemo.Domain.Enums;
+using Clean_Architecture.Domain.Enums;
 
-namespace CleanArchitechtureDemo.Domain.Entities;
+namespace Clean_Architecture.Domain.Entities;
 
 public class Device : BaseAuditableEntity
 {

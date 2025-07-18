@@ -594,9 +594,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj",
-      "projectName": "CleanArchitechtureDemo.Domain",
-      "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj",
+      "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj",
+      "projectName": "Clean_Architecture.Domain",
+      "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\obj\\",
       "projectStyle": "PackageReference",

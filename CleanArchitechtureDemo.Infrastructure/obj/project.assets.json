@@ -2,6 +2,24 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "AutoMapper/15.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.0",
+          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1"
+        },
+        "compile": {
+          "lib/net9.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1093,46 +1111,70 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "CleanArchitechtureDemo.Application/1.0.0": {
+      "Clean_Architecture.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "CleanArchitechtureDemo.Domain": "1.0.0",
-          "CleanArchitechtureDemo.Share": "1.0.0"
+          "Clean_Architecture.Domain": "1.0.0",
+          "Clean_Architecture.Share": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/CleanArchitechtureDemo.Application.dll": {}
+          "bin/placeholder/Clean_Architecture.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CleanArchitechtureDemo.Application.dll": {}
+          "bin/placeholder/Clean_Architecture.Application.dll": {}
         }
       },
-      "CleanArchitechtureDemo.Domain/1.0.0": {
+      "Clean_Architecture.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "MediatR": "13.0.0"
         },
         "compile": {
-          "bin/placeholder/CleanArchitechtureDemo.Domain.dll": {}
+          "bin/placeholder/Clean_Architecture.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CleanArchitechtureDemo.Domain.dll": {}
+          "bin/placeholder/Clean_Architecture.Domain.dll": {}
         }
       },
-      "CleanArchitechtureDemo.Share/1.0.0": {
+      "Clean_Architecture.Share/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper": "15.0.1",
+          "Clean_Architecture.Domain": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/CleanArchitechtureDemo.Share.dll": {}
+          "bin/placeholder/Clean_Architecture.Share.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CleanArchitechtureDemo.Share.dll": {}
+          "bin/placeholder/Clean_Architecture.Share.dll": {}
         }
       }
     }
   },
   "libraries": {
+    "AutoMapper/15.0.1": {
+      "sha512": "kNo7iIAi4p4XxoEbfif2WUQtc6RTx+UteiRYPqCOKj+4q4+YaWono06qTxoHBy+0N1HdganA//k5p/VmWw2AMA==",
+      "type": "package",
+      "path": "automapper/15.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "automapper.15.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml",
+        "lib/net9.0/AutoMapper.dll",
+        "lib/net9.0/AutoMapper.xml",
+        "lib/netstandard2.0/AutoMapper.dll",
+        "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -3234,26 +3276,26 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "CleanArchitechtureDemo.Application/1.0.0": {
+    "Clean_Architecture.Application/1.0.0": {
       "type": "project",
-      "path": "../CleanArchitechtureDemo.Application/CleanArchitechtureDemo.Application.csproj",
-      "msbuildProject": "../CleanArchitechtureDemo.Application/CleanArchitechtureDemo.Application.csproj"
+      "path": "../CleanArchitechtureDemo.Application/Clean_Architecture.Application.csproj",
+      "msbuildProject": "../CleanArchitechtureDemo.Application/Clean_Architecture.Application.csproj"
     },
-    "CleanArchitechtureDemo.Domain/1.0.0": {
+    "Clean_Architecture.Domain/1.0.0": {
       "type": "project",
-      "path": "../CleanArchitechtureDemo.Domain/CleanArchitechtureDemo.Domain.csproj",
-      "msbuildProject": "../CleanArchitechtureDemo.Domain/CleanArchitechtureDemo.Domain.csproj"
+      "path": "../CleanArchitechtureDemo.Domain/Clean_Architecture.Domain.csproj",
+      "msbuildProject": "../CleanArchitechtureDemo.Domain/Clean_Architecture.Domain.csproj"
     },
-    "CleanArchitechtureDemo.Share/1.0.0": {
+    "Clean_Architecture.Share/1.0.0": {
       "type": "project",
-      "path": "../CleanArchitechtureDemo.Share/CleanArchitechtureDemo.Share.csproj",
-      "msbuildProject": "../CleanArchitechtureDemo.Share/CleanArchitechtureDemo.Share.csproj"
+      "path": "../CleanArchitechtureDemo.Share/Clean_Architecture.Share.csproj",
+      "msbuildProject": "../CleanArchitechtureDemo.Share/Clean_Architecture.Share.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "CleanArchitechtureDemo.Application >= 1.0.0",
-      "CleanArchitechtureDemo.Domain >= 1.0.0",
+      "Clean_Architecture.Application >= 1.0.0",
+      "Clean_Architecture.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.7",
       "Microsoft.EntityFrameworkCore >= 9.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
@@ -3267,9 +3309,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Infrastructure\\CleanArchitechtureDemo.Infrastructure.csproj",
-      "projectName": "CleanArchitechtureDemo.Infrastructure",
-      "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Infrastructure\\CleanArchitechtureDemo.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Infrastructure\\Clean_Architecture.Infrastructure.csproj",
+      "projectName": "Clean_Architecture.Infrastructure",
+      "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Infrastructure\\Clean_Architecture.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -3293,11 +3335,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj": {
-              "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\CleanArchitechtureDemo.Application.csproj"
+            "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj": {
+              "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Application\\Clean_Architecture.Application.csproj"
             },
-            "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj": {
-              "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj"
+            "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj": {
+              "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\Clean_Architecture.Domain.csproj"
             }
           }
         }

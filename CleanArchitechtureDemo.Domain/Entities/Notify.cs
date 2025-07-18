@@ -1,6 +1,6 @@
 ﻿using Clean_Architecture.Domain.Common;
 
-namespace CleanArchitechtureDemo.Domain.Entities;
+namespace Clean_Architecture.Domain.Entities;
 
 public class Notify : BaseAuditableEntity
 {
