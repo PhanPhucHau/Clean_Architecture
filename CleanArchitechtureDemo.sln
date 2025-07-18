@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58 d17.14
+VisualStudioVersion = 17.14.36121.58
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitechtureDemo.WebAPI", "CleanArchitechtureDemo.WebAPI\CleanArchitechtureDemo.WebAPI.csproj", "{02B22B48-F35F-43C5-9FA5-DA97CAB2F22C}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitechtureDemo.Infrastructure", "CleanArchitechtureDemo.Infrastructure\CleanArchitechtureDemo.Infrastructure.csproj", "{B782B625-E9CF-4758-B40B-E8048AABD4D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitechtureDemo.Domain", "CleanArchitechtureDemo.Domain\CleanArchitechtureDemo.Domain.csproj", "{1A2E2029-265B-4514-A9D7-DE07E75FA07C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitechtureDemo.Share", "CleanArchitechtureDemo.Share\CleanArchitechtureDemo.Share.csproj", "{7F071395-DA3E-44F4-A9B2-C084F439A721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1A2E2029-265B-4514-A9D7-DE07E75FA07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A2E2029-265B-4514-A9D7-DE07E75FA07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A2E2029-265B-4514-A9D7-DE07E75FA07C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F071395-DA3E-44F4-A9B2-C084F439A721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F071395-DA3E-44F4-A9B2-C084F439A721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F071395-DA3E-44F4-A9B2-C084F439A721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F071395-DA3E-44F4-A9B2-C084F439A721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

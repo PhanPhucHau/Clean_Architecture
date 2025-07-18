@@ -1,0 +1,12 @@
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\CleanArchitechtureDemo.Share.deps.json
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\CleanArchitechtureDemo.Share.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\bin\Debug\net9.0\CleanArchitechtureDemo.Share.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.GeneratedMSBuildEditorConfig.editorconfig
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.AssemblyInfoInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.AssemblyInfo.cs
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.csproj.CoreCompileInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.sourcelink.json
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\refint\CleanArchitechtureDemo.Share.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\CleanArchitechtureDemo.Share.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Share\obj\Debug\net9.0\ref\CleanArchitechtureDemo.Share.dll

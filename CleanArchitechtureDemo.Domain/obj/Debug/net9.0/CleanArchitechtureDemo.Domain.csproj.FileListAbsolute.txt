@@ -18,6 +18,7 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanA
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanArchitechtureDemo.Domain.AssemblyInfoInputs.cache
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanArchitechtureDemo.Domain.AssemblyInfo.cs
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanArchitechtureDemo.Domain.csproj.CoreCompileInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanArchitechtureDemo.Domain.sourcelink.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanArchitechtureDemo.Domain.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\refint\CleanArchitechtureDemo.Domain.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Domain\obj\Debug\net9.0\CleanArchitechtureDemo.Domain.pdb

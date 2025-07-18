@@ -23,13 +23,16 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Application.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Domain.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Share.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Application.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Domain.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\bin\Debug\net9.0\CleanArchitechtureDemo.Share.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.csproj.AssemblyReference.cache
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.AssemblyInfoInputs.cache
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.AssemblyInfo.cs
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.sourcelink.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArc.997052C7.Up2Date
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Infrastructure\obj\Debug\net9.0\refint\CleanArchitechtureDemo.Infrastructure.dll

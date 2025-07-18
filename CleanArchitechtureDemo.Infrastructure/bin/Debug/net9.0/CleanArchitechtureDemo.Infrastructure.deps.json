@@ -738,7 +738,8 @@
       "System.Threading.Channels/7.0.0": {},
       "CleanArchitechtureDemo.Application/1.0.0": {
         "dependencies": {
-          "CleanArchitechtureDemo.Domain": "1.0.0"
+          "CleanArchitechtureDemo.Domain": "1.0.0",
+          "CleanArchitechtureDemo.Share": "1.0.0"
         },
         "runtime": {
           "CleanArchitechtureDemo.Application.dll": {
@@ -753,6 +754,14 @@
         },
         "runtime": {
           "CleanArchitechtureDemo.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CleanArchitechtureDemo.Share/1.0.0": {
+        "runtime": {
+          "CleanArchitechtureDemo.Share.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1143,6 +1152,11 @@
       "sha512": ""
     },
     "CleanArchitechtureDemo.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchitechtureDemo.Share/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

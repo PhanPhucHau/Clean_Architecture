@@ -189,6 +189,8 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Micros
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Npgsql.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\System.CodeDom.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\System.Composition.AttributedModel.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\System.Composition.Convention.dll
@@ -264,8 +266,10 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\zh-Han
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Application.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Domain.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Share.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Application.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Infrastructure.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Share.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\CleanArchitechtureDemo.Domain.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanArchitechtureDemo.WebAPI.csproj.AssemblyReference.cache
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanArchitechtureDemo.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
@@ -274,6 +278,7 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanA
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanArchitechtureDemo.WebAPI.csproj.CoreCompileInputs.cache
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanArchitechtureDemo.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanArchitechtureDemo.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\CleanArchitechtureDemo.WebAPI.sourcelink.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\scopedcss\bundle\CleanArchitechtureDemo.WebAPI.styles.css
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\staticwebassets.build.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\staticwebassets.build.json.cache

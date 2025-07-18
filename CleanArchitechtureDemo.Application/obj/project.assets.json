@@ -218,6 +218,16 @@
         "runtime": {
           "bin/placeholder/CleanArchitechtureDemo.Domain.dll": {}
         }
+      },
+      "CleanArchitechtureDemo.Share/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CleanArchitechtureDemo.Share.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitechtureDemo.Share.dll": {}
+        }
       }
     }
   },
@@ -598,11 +608,17 @@
       "type": "project",
       "path": "../CleanArchitechtureDemo.Domain/CleanArchitechtureDemo.Domain.csproj",
       "msbuildProject": "../CleanArchitechtureDemo.Domain/CleanArchitechtureDemo.Domain.csproj"
+    },
+    "CleanArchitechtureDemo.Share/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitechtureDemo.Share/CleanArchitechtureDemo.Share.csproj",
+      "msbuildProject": "../CleanArchitechtureDemo.Share/CleanArchitechtureDemo.Share.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "CleanArchitechtureDemo.Domain >= 1.0.0"
+      "CleanArchitechtureDemo.Domain >= 1.0.0",
+      "CleanArchitechtureDemo.Share >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -640,6 +656,9 @@
           "projectReferences": {
             "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj": {
               "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Domain\\CleanArchitechtureDemo.Domain.csproj"
+            },
+            "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Share\\CleanArchitechtureDemo.Share.csproj": {
+              "projectPath": "D:\\Choi\\Clean_Architecture\\CleanArchitechtureDemo.Share\\CleanArchitechtureDemo.Share.csproj"
             }
           }
         }
