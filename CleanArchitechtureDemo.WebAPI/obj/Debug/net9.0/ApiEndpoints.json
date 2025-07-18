@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.UserControllers",
+    "Method": "CreateUserAsync",
+    "RelativePath": "api/UserControllers/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.User.Request.UserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Clean_Architecture.WebAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
@@ -9,7 +25,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Clean_Architecture.WebAPI.WeatherForecast, CleanArchitechtureDemo.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Clean_Architecture.WebAPI.WeatherForecast, Clean_Architecture.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

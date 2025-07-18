@@ -1,5 +1,6 @@
 ﻿using Clean_Architecture.Applicaiton.Common.Interfaces;
 using Clean_Architecture.Infrastructure.Persistence;
+using Clean_Architecture.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,12 +20,8 @@ public static class DependencyInjection
 
         services.AddScoped<IApplicationDbContext>(provider => (IApplicationDbContext)provider.GetRequiredService<ApplicationDBContext>());
 
-        //services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
-        //services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
 
-        //// register repositories
-        //services.AddScoped<IProjectRepository, ProjectRepository>(); // Register specific repository for Project entity
-        //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>)); // Register generic repository for all entities
+        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         return services;
     }
 }

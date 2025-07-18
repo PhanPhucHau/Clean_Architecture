@@ -148,3 +148,7 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\refint
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\Clean_Architecture.WebAPI.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\Clean_Architecture.WebAPI.genruntimeconfig.cache
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\obj\Debug\net9.0\ref\Clean_Architecture.WebAPI.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\FluentValidation.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

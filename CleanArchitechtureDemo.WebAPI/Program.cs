@@ -1,4 +1,7 @@
+using Clean_Architecture.Application;
+using Clean_Architecture.Application.User.Command.CreateUser;
 using Clean_Architecture.Infrastructure.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,16 +12,8 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-// register Infrastructure
+//register Infrastructure
 builder.Services.AddInfrastructure(builder.Configuration);
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -54,11 +49,22 @@ builder.Services.AddSwaggerGen(options =>
 //register MediatR
 builder.Services.AddMediatR(cfg =>
 {
-
+    cfg.RegisterServicesFromAssemblyContaining<CreateUserCommand>();
 });
 
-//register Infrastructure
-builder.Services.AddInfrastructure(builder.Configuration);
+// register application services
+builder.Services.AddApplicationServices();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 
 app.UseHttpsRedirection();
 
