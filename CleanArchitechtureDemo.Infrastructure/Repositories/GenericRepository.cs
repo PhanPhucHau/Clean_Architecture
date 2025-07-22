@@ -13,6 +13,17 @@ namespace Clean_Architecture.Infrastructure.Repositories
         {
             _context = context;
         }
+
+        public IQueryable<T> GetQuery()
+        {
+            return _dbSet.AsQueryable();
+        }
+
+        // Các phương thức khác...
+        public async Task<IEnumerable<T>> GetAllAsync()
+        {
+            return await _dbSet.ToListAsync();
+        }
         public async Task<bool> ExistsAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id) != null;

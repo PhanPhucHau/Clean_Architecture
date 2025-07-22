@@ -13,9 +13,4 @@ public class UserDto
     public Gender Gender { get; set; }
     public NotificationUser NotificationUser { get; set; }
 
-    private class Mapping : Profile
-    {
-        public Mapping() => CreateMap<Clean_Architecture.Domain.Entities.User, UserDto>();
-    }
-
 }

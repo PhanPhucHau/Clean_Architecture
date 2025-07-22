@@ -1,4 +1,7 @@
 ﻿using Clean_Architecture.Application.User.Command.CreateUser;
+using Clean_Architecture.Application.User.Queries.GetUserWithPagination;
+using Clean_Architecture.Share.ApiResponse;
+using Clean_Architecture.Share.User.Model;
 using Clean_Architecture.Share.User.Request;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +20,14 @@ public class UserControllers : ControllerBase
     public async Task<IActionResult> CreateUserAsync([FromBody] UserRequest request)
     {
         var result = await _mediator.Send(new CreateUserCommand(request));
+        return Ok(result);
+    }
+
+    [HttpGet("paged")]
+    public async Task<ActionResult<BaseAPIResponse<List<UserDto>>>> GetUsersWithPaging([FromQuery] PaginationRequest request)
+    {
+        var query = new GetUserWithPagingQuery(request);
+        var result = await _mediator.Send(query);
         return Ok(result);
     }
 }

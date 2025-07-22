@@ -1,5 +1,4 @@
 ﻿using Clean_Architecture.Applicaiton.Common.Interfaces;
-using Clean_Architecture.Domain.Enums;
 using Clean_Architecture.Share.ApiResponse;
 using Clean_Architecture.Share.User.Request;
 using MediatR;
@@ -13,7 +12,7 @@ public class CreateUserCommandHandle : IRequestHandler<CreateUserCommand, BaseAP
 
     private readonly IGenericRepository<Clean_Architecture.Domain.Entities.User> _userRepository;
 
-    public CreateUserCommandHandle(IApplicationDbContext context ,IGenericRepository<Clean_Architecture.Domain.Entities.User> userRepository)
+    public CreateUserCommandHandle(IApplicationDbContext context, IGenericRepository<Clean_Architecture.Domain.Entities.User> userRepository)
     {
 
         _userRepository = userRepository;
@@ -23,7 +22,7 @@ public class CreateUserCommandHandle : IRequestHandler<CreateUserCommand, BaseAP
     public async Task<BaseAPIResponse<object>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
         if (await _userRepository.AnyAsync(x => x.PhoneNumber.ToLower() == request.UserRequest.PhoneNumber.ToLower()))
-            return  BaseAPIResponse<object>.FailResponse("Trùng số điện thoại, vui lòng nhập số khác");
+            return BaseAPIResponse<object>.FailResponse("Trùng số điện thoại, vui lòng nhập số khác");
         var user = Clean_Architecture.Domain.Entities.User.Create(
             request.UserRequest.Name,
             request.UserRequest.Email,
@@ -37,14 +36,16 @@ public class CreateUserCommandHandle : IRequestHandler<CreateUserCommand, BaseAP
 
         await _context.SaveChangesAsync(cancellationToken);
         return BaseAPIResponse<object>.SuccessResponse(
-              data: new { 
+              data: new
+              {
                   UserId = user.Id,
                   Name = user.Name,
                   Email = user.Email,
                   PhoneNumber = user.PhoneNumber,
                   Address = user.Address,
                   Date = user.DateOfBirth,
-                  Gender = user.Gender},
+                  Gender = user.Gender
+              },
               message: "User created successfully"
           );
     }
