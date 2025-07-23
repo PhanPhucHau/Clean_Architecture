@@ -8,24 +8,10 @@
     ".NETCoreApp,Version=v9.0": {
       "Clean_Architecture.Share/1.0.0": {
         "dependencies": {
-          "AutoMapper": "15.0.1",
           "Clean_Architecture.Domain": "1.0.0"
         },
         "runtime": {
           "Clean_Architecture.Share.dll": {}
-        }
-      },
-      "AutoMapper/15.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.Logging": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.0",
-          "Microsoft.IdentityModel.JsonWebTokens": "8.0.1"
-        },
-        "runtime": {
-          "lib/net9.0/AutoMapper.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.1.0"
-          }
         }
       },
       "MediatR/13.0.0": {
@@ -172,13 +158,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "AutoMapper/15.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kNo7iIAi4p4XxoEbfif2WUQtc6RTx+UteiRYPqCOKj+4q4+YaWono06qTxoHBy+0N1HdganA//k5p/VmWw2AMA==",
-      "path": "automapper/15.0.1",
-      "hashPath": "automapper.15.0.1.nupkg.sha512"
     },
     "MediatR/13.0.0": {
       "type": "package",

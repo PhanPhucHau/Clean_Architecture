@@ -1,5 +1,402 @@
 [
   {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.DeviceControllers",
+    "Method": "GetDeviceUsers",
+    "RelativePath": "api/DeviceControllers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Collections.Generic.List\u00601[[Clean_Architecture.Share.Device.Model.DeviceDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.DeviceControllers",
+    "Method": "UpdateDevice",
+    "RelativePath": "api/DeviceControllers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.Device.Request.DeviceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[Clean_Architecture.Share.Device.Model.DeviceDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.DeviceControllers",
+    "Method": "DeleteDevice",
+    "RelativePath": "api/DeviceControllers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.DeviceControllers",
+    "Method": "GetDeviceById",
+    "RelativePath": "api/DeviceControllers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[Clean_Architecture.Share.Device.Model.DeviceDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.DeviceControllers",
+    "Method": "CreateDeviceAsync",
+    "RelativePath": "api/DeviceControllers/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.Device.Request.DeviceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.DeviceControllers",
+    "Method": "GetDevicesWithPaging",
+    "RelativePath": "api/DeviceControllers/paged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SearchString",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "OrderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Order",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Collections.Generic.List\u00601[[Clean_Architecture.Share.Device.Model.DeviceDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.FilterControllers",
+    "Method": "GetFilterUsers",
+    "RelativePath": "api/FilterControllers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Collections.Generic.List\u00601[[Clean_Architecture.Share.Filter.Model.FilterDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.FilterControllers",
+    "Method": "UpdateFilter",
+    "RelativePath": "api/FilterControllers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.Filter.Request.FilterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[Clean_Architecture.Share.Filter.Model.FilterDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.FilterControllers",
+    "Method": "DeleteFilter",
+    "RelativePath": "api/FilterControllers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.FilterControllers",
+    "Method": "GetFilterById",
+    "RelativePath": "api/FilterControllers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[Clean_Architecture.Share.Filter.Model.FilterDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.FilterControllers",
+    "Method": "CreateFilterAsync",
+    "RelativePath": "api/FilterControllers/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.Filter.Request.FilterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.NotifyController",
+    "Method": "GetAllNotify",
+    "RelativePath": "api/Notify",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Collections.Generic.List\u00601[[Clean_Architecture.Share.Notify.Model.NotifyDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.NotifyController",
+    "Method": "CreateNotifyAsync",
+    "RelativePath": "api/Notify/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.Notify.Request.NotifyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.UserControllers",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/UserControllers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Collections.Generic.List\u00601[[Clean_Architecture.Share.User.Model.UserDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.UserControllers",
+    "Method": "UpdateUser",
+    "RelativePath": "api/UserControllers/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Clean_Architecture.Share.User.Request.UserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[Clean_Architecture.Share.User.Model.UserDto, Clean_Architecture.Share, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Clean_Architecture.WebAPI.Controllers.UserControllers",
+    "Method": "DeleteUser",
+    "RelativePath": "api/UserControllers/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Clean_Architecture.Share.ApiResponse.BaseAPIResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Clean_Architecture.WebAPI.Controllers.UserControllers",
     "Method": "CreateUserAsync",
     "RelativePath": "api/UserControllers/create",

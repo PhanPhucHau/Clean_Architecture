@@ -22,7 +22,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Device", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Device", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,7 +61,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UserId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -71,7 +71,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.ToTable("Devices");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Filter", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Filter", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -88,7 +88,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
-                    b.Property<int>("DeviceId")
+                    b.Property<int?>("DeviceId")
                         .HasColumnType("integer");
 
                     b.Property<int>("FilterType")
@@ -120,7 +120,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.ToTable("Filters");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.History", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.History", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -168,7 +168,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.ToTable("Histories");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Notify", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Notify", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -185,16 +185,8 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.Property<int>("DeviceId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("DeviceNotifyId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<int>("FilterId")
                         .HasColumnType("integer");
-
-                    b.Property<string>("FilterNotifyId")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<bool?>("IsRead")
                         .HasColumnType("boolean");
@@ -219,10 +211,6 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("UserNotifyId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DeviceId");
@@ -234,7 +222,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.ToTable("Notifies");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.User", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -501,49 +489,45 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Device", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Device", b =>
                 {
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.User", "User")
+                    b.HasOne("Clean_Architecture.Domain.Entities.User", "User")
                         .WithMany("Devices")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Filter", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Filter", b =>
                 {
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.Device", "Device")
+                    b.HasOne("Clean_Architecture.Domain.Entities.Device", "Device")
                         .WithMany("DeviceUser")
-                        .HasForeignKey("DeviceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DeviceId");
 
                     b.Navigation("Device");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.History", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.History", b =>
                 {
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.Device", "Device")
+                    b.HasOne("Clean_Architecture.Domain.Entities.Device", "Device")
                         .WithMany("Histories")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.Filter", "Filter")
+                    b.HasOne("Clean_Architecture.Domain.Entities.Filter", "Filter")
                         .WithMany("Histories")
                         .HasForeignKey("FilterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.Notify", "Notify")
+                    b.HasOne("Clean_Architecture.Domain.Entities.Notify", "Notify")
                         .WithMany("Histories")
                         .HasForeignKey("NotifyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.User", "User")
+                    b.HasOne("Clean_Architecture.Domain.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -558,21 +542,21 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Notify", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Notify", b =>
                 {
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.Device", "Device")
+                    b.HasOne("Clean_Architecture.Domain.Entities.Device", "Device")
                         .WithMany("Notifies")
                         .HasForeignKey("DeviceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.Filter", "Filter")
+                    b.HasOne("Clean_Architecture.Domain.Entities.Filter", "Filter")
                         .WithMany("Notifies")
                         .HasForeignKey("FilterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CleanArchitechtureDemo.Domain.Entities.User", "User")
+                    b.HasOne("Clean_Architecture.Domain.Entities.User", "User")
                         .WithMany("Notifies")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -636,7 +620,7 @@ namespace Clean_Architecture.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Device", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Device", b =>
                 {
                     b.Navigation("DeviceUser");
 
@@ -645,19 +629,19 @@ namespace Clean_Architecture.Infrastructure.Migrations
                     b.Navigation("Notifies");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Filter", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Filter", b =>
                 {
                     b.Navigation("Histories");
 
                     b.Navigation("Notifies");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.Notify", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.Notify", b =>
                 {
                     b.Navigation("Histories");
                 });
 
-            modelBuilder.Entity("CleanArchitechtureDemo.Domain.Entities.User", b =>
+            modelBuilder.Entity("Clean_Architecture.Domain.Entities.User", b =>
                 {
                     b.Navigation("Devices");
 

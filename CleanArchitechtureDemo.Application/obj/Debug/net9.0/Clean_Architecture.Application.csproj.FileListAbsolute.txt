@@ -1,9 +1,3 @@
-D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.csproj.AssemblyReference.cache
-D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.AssemblyInfoInputs.cache
-D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.AssemblyInfo.cs
-D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.csproj.CoreCompileInputs.cache
-D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.sourcelink.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\Clean_Architecture.Application.deps.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\Clean_Architecture.Application.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\Clean_Architecture.Application.pdb
@@ -11,6 +5,12 @@ D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\C
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\Clean_Architecture.Share.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\Clean_Architecture.Domain.pdb
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\bin\Debug\net9.0\Clean_Architecture.Share.pdb
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.csproj.AssemblyReference.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.AssemblyInfoInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.AssemblyInfo.cs
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.csproj.CoreCompileInputs.cache
+D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.sourcelink.json
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Ar.47DA2421.Up2Date
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\Clean_Architecture.Application.dll
 D:\Choi\Clean_Architecture\CleanArchitechtureDemo.Application\obj\Debug\net9.0\refint\Clean_Architecture.Application.dll

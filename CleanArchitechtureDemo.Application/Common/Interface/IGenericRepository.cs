@@ -6,7 +6,7 @@ namespace Clean_Architecture.Applicaiton.Common.Interfaces
     {
         IQueryable<T> GetQuery();
         Task<IEnumerable<T>> GetAllAsync();
-        Task<bool> ExistsAsync(int id);
+        Task<bool> ExistsAsync(int? id);
         Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
         Task<T?> GetByIdAsync(int id);
         Task AddAsync(T entity);

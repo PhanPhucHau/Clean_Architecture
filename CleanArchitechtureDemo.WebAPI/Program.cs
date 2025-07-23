@@ -46,11 +46,6 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-//register MediatR
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssemblyContaining<CreateUserCommand>();
-});
 
 // register application services
 builder.Services.AddApplicationServices();

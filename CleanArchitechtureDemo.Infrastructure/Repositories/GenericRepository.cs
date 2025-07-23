@@ -12,6 +12,7 @@ namespace Clean_Architecture.Infrastructure.Repositories
         public GenericRepository(ApplicationDBContext context)
         {
             _context = context;
+            _dbSet = _context.Set<T>();
         }
 
         public IQueryable<T> GetQuery()
@@ -24,7 +25,7 @@ namespace Clean_Architecture.Infrastructure.Repositories
         {
             return await _dbSet.ToListAsync();
         }
-        public async Task<bool> ExistsAsync(int id)
+        public async Task<bool> ExistsAsync(int? id)
         {
             return await _context.Set<T>().FindAsync(id) != null;
         }

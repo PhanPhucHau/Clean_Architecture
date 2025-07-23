@@ -4,7 +4,6 @@ namespace Clean_Architecture.Domain.Entities;
 
 public class History : BaseAuditableEntity
 {
-
     public int DeviceId { get; set; }
     public virtual Device Device { get; set; }
 

@@ -1,6 +1,8 @@
 ﻿using Clean_Architecture.Domain.Common;
 using Clean_Architecture.Domain.Enums;
+using Clean_Architecture.Domain.Events.DeviceEvent;
 using Clean_Architecture.Domain.Events.UserEvent;
+using System.Reflection;
 
 namespace Clean_Architecture.Domain.Entities;
 
@@ -37,5 +39,22 @@ public class User : BaseAuditableEntity
         return user;
     }
 
+    public void Update(string name, string? email, string phoneNumber, string address, DateTime? date, Gender gender, NotificationUser notificationUser)
+    {
+        Name = name;
+        Email = email;
+        PhoneNumber = phoneNumber;
+        Address = address;
+        DateOfBirth = date;
+        Gender = gender;
+        NotificationUser = notificationUser;
+
+        AddDomainEvent(new UpdateUserEvent(this));
+    }
+
+    public void Delete()
+    {
+        RemoveDomainEvent(new DeleteDeviceEvent(Id));
+    }
 }
 
